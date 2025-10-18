@@ -1,0 +1,1547 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatbot Industry Requirements (≈90 rows)</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  h1 { font-size: 20px; }
+  table { border-collapse: collapse; width: 100%; }
+  thead th { position: sticky; top: 0; background: #f7f7f7; z-index: 2; }
+  th, td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
+  tr:nth-child(even) { background: #fafafa; }
+  .small { font-size: 12px; }
+</style>
+</head>
+<body>
+<h1>Chatbot Industry Requirements – "Almost 100" Industries</h1>
+<p class="small">Includes projected monthly chat volume, must-haves, and example organization profile columns. Finance row uses your provided example.</p>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Industry</th>
+      <th>Projected_Monthly_Chat_Volume</th>
+      <th>Must_Haves</th>
+      <th>firm_name</th>
+      <th>assistant_name</th>
+      <th>address</th>
+      <th>main_phone</th>
+      <th>website</th>
+      <th>business_hours_local</th>
+      <th>tone</th>
+      <th>disclaimer_text</th>
+      <th>product_universe</th>
+      <th>additional_knowledge_articles</th>
+      <th>other_additional_info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Finance</td>
+      <td>50k–200k / month</td>
+      <td>PCI DSS compliance, KYC/AML, PII redaction, Audit trails, Transaction APIs, 24/7 availability</td>
+      <td>Liberty Financial Group</td>
+      <td>Jonathan Parker</td>
+      <td>100 Wall Street, New York, NY 10005</td>
+      <td>(212) 555-0400</td>
+      <td>https://libertyfinancialgroup.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Sat: 10:00 AM - 2:00 PM, ET</td>
+      <td>Professional and reassuring</td>
+      <td>Financial products involve risk. Investment performance is not guaranteed. FDIC insured up to applicable limits. Consult professionals for personalized advice.</td>
+      <td>Investment Services; Banking Products; Insurance Solutions; Retirement Planning; Wealth Management; Business Finance; Online Banking</td>
+      <td>Investment Fundamentals: https://www.investor.gov/introduction-investing | Banking Regulations: https://www.federalreserve.gov/aboutthefed/structure.htm | Financial Planning Guide: https://www.nerdwallet.com/article/investing/financial-planning</td>
+      <td>Full-service financial institution chartered 1925. SEC-registered investment advisor. Over $50B in assets under management. Comprehensive insurance partnerships.</td>
+    </tr>
+    <tr>
+      <td>Retail & eCommerce</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, Catalog/OMS integration</td>
+      <td>Retail & eCommerce Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>510 Market Street, Metropolis, NY 10410</td>
+      <td>(555) 401-0410</td>
+      <td>https://retail-and-ecommerce.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>Catalog; Orders; Returns; Loyalty; Payments</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Banking</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, Strong auth (OAuth2/biometrics)</td>
+      <td>Banking Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>511 Market Street, Metropolis, NY 10411</td>
+      <td>(555) 412-0411</td>
+      <td>https://banking.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Friendly</td>
+      <td>Financial products involve risk. Performance not guaranteed. Terms apply; consult licensed professionals.</td>
+      <td>Checking; Savings; Cards; Loans; Mortgages</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Healthcare Providers</td>
+      <td>30k–120k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, HIPAA/PHI handling</td>
+      <td>Healthcare Providers Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>512 Market Street, Metropolis, NY 10412</td>
+      <td>(555) 423-0412</td>
+      <td>https://healthcare-providers.example.com</td>
+      <td>24/7</td>
+      <td>Empathetic</td>
+      <td>Not a substitute for professional medical advice. In emergencies, call local services immediately.</td>
+      <td>Appointments; Referrals; Billing; Care Plans</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Health Insurance</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, Eligibility & benefits (EDI 270/271)</td>
+      <td>Health Insurance Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>513 Market Street, Metropolis, NY 10413</td>
+      <td>(555) 434-0413</td>
+      <td>https://health-insurance.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Concise</td>
+      <td>Not a substitute for professional medical advice. In emergencies, call local services immediately.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Pharmaceuticals</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, Adverse event reporting</td>
+      <td>Pharmaceuticals Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>514 Market Street, Metropolis, NY 10414</td>
+      <td>(555) 445-0414</td>
+      <td>https://pharmaceuticals.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Reassuring</td>
+      <td>Not a substitute for professional medical advice. In emergencies, call local services immediately.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Biotech</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Biotech Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>515 Market Street, Metropolis, NY 10415</td>
+      <td>(555) 456-0415</td>
+      <td>https://biotech.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Telecommunications</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, CRM/BSS/OSS integration</td>
+      <td>Telecommunications Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>516 Market Street, Metropolis, NY 10416</td>
+      <td>(555) 467-0416</td>
+      <td>https://telecommunications.example.com</td>
+      <td>24/7</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Internet Service Providers</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Internet Service Providers Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>517 Market Street, Metropolis, NY 10417</td>
+      <td>(555) 478-0417</td>
+      <td>https://internet-service-providers.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Media & Entertainment</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Media & Entertainment Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>518 Market Street, Metropolis, NY 10418</td>
+      <td>(555) 489-0418</td>
+      <td>https://media-and-entertainment.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Streaming Services</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Streaming Services Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>519 Market Street, Metropolis, NY 10419</td>
+      <td>(555) 490-0419</td>
+      <td>https://streaming-services.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Gaming</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Gaming Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>520 Market Street, Metropolis, NY 10420</td>
+      <td>(555) 401-0420</td>
+      <td>https://gaming.example.com</td>
+      <td>24/7</td>
+      <td>Reassuring</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Travel Agencies</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Travel Agencies Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>521 Market Street, Metropolis, NY 10421</td>
+      <td>(555) 412-0421</td>
+      <td>https://travel-agencies.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Airlines</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, GDS/PNR access</td>
+      <td>Airlines Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>522 Market Street, Metropolis, NY 10422</td>
+      <td>(555) 423-0422</td>
+      <td>https://airlines.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>Flights; Ancillaries; Loyalty; Vouchers</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Hotels & Hospitality</td>
+      <td>30k–120k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, PMS/CRS integration</td>
+      <td>Hotels & Hospitality Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>523 Market Street, Metropolis, NY 10423</td>
+      <td>(555) 434-0423</td>
+      <td>https://hotels-and-hospitality.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>Rooms; Packages; Loyalty; Events</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Short-Term Rentals</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Short-Term Rentals Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>524 Market Street, Metropolis, NY 10424</td>
+      <td>(555) 445-0424</td>
+      <td>https://short-term-rentals.example.com</td>
+      <td>24/7</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Ride-Hailing</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Ride-Hailing Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>525 Market Street, Metropolis, NY 10425</td>
+      <td>(555) 456-0425</td>
+      <td>https://ride-hailing.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Public Transit</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Public Transit Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>526 Market Street, Metropolis, NY 10426</td>
+      <td>(555) 467-0426</td>
+      <td>https://public-transit.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Reassuring</td>
+      <td>Informational guidance only; refer to official regulations and notices for authoritative details.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Railways</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Railways Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>527 Market Street, Metropolis, NY 10427</td>
+      <td>(555) 478-0427</td>
+      <td>https://railways.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Logistics & Freight</td>
+      <td>30k–120k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Logistics & Freight Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>528 Market Street, Metropolis, NY 10428</td>
+      <td>(555) 489-0428</td>
+      <td>https://logistics-and-freight.example.com</td>
+      <td>24/7</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Maritime Shipping</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Maritime Shipping Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>529 Market Street, Metropolis, NY 10429</td>
+      <td>(555) 490-0429</td>
+      <td>https://maritime-shipping.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Postal & Courier</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Postal & Courier Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>530 Market Street, Metropolis, NY 10430</td>
+      <td>(555) 401-0430</td>
+      <td>https://postal-and-courier.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Utilities (Electric)</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, Outage map/status</td>
+      <td>Utilities Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>531 Market Street, Metropolis, NY 10431</td>
+      <td>(555) 412-0431</td>
+      <td>https://utilities-electric.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>Billing; Outage; Usage Insights; Start/Stop Service</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Utilities (Gas)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Utilities Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>532 Market Street, Metropolis, NY 10432</td>
+      <td>(555) 423-0432</td>
+      <td>https://utilities-gas.example.com</td>
+      <td>24/7</td>
+      <td>Reassuring</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Utilities (Water)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Utilities Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>533 Market Street, Metropolis, NY 10433</td>
+      <td>(555) 434-0433</td>
+      <td>https://utilities-water.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Renewable Energy</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Renewable Energy Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>534 Market Street, Metropolis, NY 10434</td>
+      <td>(555) 445-0434</td>
+      <td>https://renewable-energy.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Oil & Gas</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Oil & Gas Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>535 Market Street, Metropolis, NY 10435</td>
+      <td>(555) 456-0435</td>
+      <td>https://oil-and-gas.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Manufacturing (Automotive)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Manufacturing Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>536 Market Street, Metropolis, NY 10436</td>
+      <td>(555) 467-0436</td>
+      <td>https://manufacturing-automotive.example.com</td>
+      <td>24/7</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Manufacturing (Electronics)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Manufacturing Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>537 Market Street, Metropolis, NY 10437</td>
+      <td>(555) 478-0437</td>
+      <td>https://manufacturing-electronics.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Manufacturing (CPG)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Manufacturing Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>538 Market Street, Metropolis, NY 10438</td>
+      <td>(555) 489-0438</td>
+      <td>https://manufacturing-cpg.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Reassuring</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Agriculture</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Agriculture Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>539 Market Street, Metropolis, NY 10439</td>
+      <td>(555) 490-0439</td>
+      <td>https://agriculture.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Food & Beverage Brands</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Food & Beverage Brands Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>540 Market Street, Metropolis, NY 10440</td>
+      <td>(555) 401-0440</td>
+      <td>https://food-and-beverage-brands.example.com</td>
+      <td>24/7</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Grocery</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Grocery Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>541 Market Street, Metropolis, NY 10441</td>
+      <td>(555) 412-0441</td>
+      <td>https://grocery.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Restaurants (QSR)</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Restaurants Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>542 Market Street, Metropolis, NY 10442</td>
+      <td>(555) 423-0442</td>
+      <td>https://restaurants-qsr.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Restaurants (Casual)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Restaurants Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>543 Market Street, Metropolis, NY 10443</td>
+      <td>(555) 434-0443</td>
+      <td>https://restaurants-casual.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Food Delivery</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Food Delivery Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>544 Market Street, Metropolis, NY 10444</td>
+      <td>(555) 445-0444</td>
+      <td>https://food-delivery.example.com</td>
+      <td>24/7</td>
+      <td>Reassuring</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Education (K-12)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Education Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>545 Market Street, Metropolis, NY 10445</td>
+      <td>(555) 456-0445</td>
+      <td>https://education-k-12.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Expert but approachable</td>
+      <td>Information is educational and not a guarantee of outcomes. Policies may vary by institution.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Education (Higher Ed)</td>
+      <td>30k–120k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Education Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>546 Market Street, Metropolis, NY 10446</td>
+      <td>(555) 467-0446</td>
+      <td>https://education-higher-ed.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Professional</td>
+      <td>Information is educational and not a guarantee of outcomes. Policies may vary by institution.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>EdTech</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>EdTech Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>547 Market Street, Metropolis, NY 10447</td>
+      <td>(555) 478-0447</td>
+      <td>https://edtech.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Online Course Marketplaces</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Online Course Marketplaces Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>548 Market Street, Metropolis, NY 10448</td>
+      <td>(555) 489-0448</td>
+      <td>https://online-course-marketplaces.example.com</td>
+      <td>24/7</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Professional Services</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Professional Services Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>549 Market Street, Metropolis, NY 10449</td>
+      <td>(555) 490-0449</td>
+      <td>https://professional-services.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Legal Services</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Legal Services Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>550 Market Street, Metropolis, NY 10450</td>
+      <td>(555) 401-0450</td>
+      <td>https://legal-services.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Reassuring</td>
+      <td>No attorney–client relationship created. For legal advice, consult a licensed attorney.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Accounting & Tax</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Accounting & Tax Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>551 Market Street, Metropolis, NY 10451</td>
+      <td>(555) 412-0451</td>
+      <td>https://accounting-and-tax.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Real Estate (Residential)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Real Estate Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>552 Market Street, Metropolis, NY 10452</td>
+      <td>(555) 423-0452</td>
+      <td>https://real-estate-residential.example.com</td>
+      <td>24/7</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Real Estate (Commercial)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Real Estate Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>553 Market Street, Metropolis, NY 10453</td>
+      <td>(555) 434-0453</td>
+      <td>https://real-estate-commercial.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Property Management</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Property Management Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>554 Market Street, Metropolis, NY 10454</td>
+      <td>(555) 445-0454</td>
+      <td>https://property-management.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Construction</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Construction Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>555 Market Street, Metropolis, NY 10455</td>
+      <td>(555) 456-0455</td>
+      <td>https://construction.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Architecture & Design</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Architecture & Design Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>556 Market Street, Metropolis, NY 10456</td>
+      <td>(555) 467-0456</td>
+      <td>https://architecture-and-design.example.com</td>
+      <td>24/7</td>
+      <td>Reassuring</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Home Services</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Home Services Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>557 Market Street, Metropolis, NY 10457</td>
+      <td>(555) 478-0457</td>
+      <td>https://home-services.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Consumer Electronics Retail</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Consumer Electronics Retail Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>558 Market Street, Metropolis, NY 10458</td>
+      <td>(555) 489-0458</td>
+      <td>https://consumer-electronics-retail.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Fashion & Apparel</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Fashion & Apparel Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>559 Market Street, Metropolis, NY 10459</td>
+      <td>(555) 490-0459</td>
+      <td>https://fashion-and-apparel.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Beauty & Cosmetics</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Beauty & Cosmetics Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>560 Market Street, Metropolis, NY 10460</td>
+      <td>(555) 401-0460</td>
+      <td>https://beauty-and-cosmetics.example.com</td>
+      <td>24/7</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Luxury Goods</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Luxury Goods Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>561 Market Street, Metropolis, NY 10461</td>
+      <td>(555) 412-0461</td>
+      <td>https://luxury-goods.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Sporting Goods</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Sporting Goods Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>562 Market Street, Metropolis, NY 10462</td>
+      <td>(555) 423-0462</td>
+      <td>https://sporting-goods.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Reassuring</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Fitness & Gyms</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Fitness & Gyms Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>563 Market Street, Metropolis, NY 10463</td>
+      <td>(555) 434-0463</td>
+      <td>https://fitness-and-gyms.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Wellness & Mental Health</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Wellness & Mental Health Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>564 Market Street, Metropolis, NY 10464</td>
+      <td>(555) 445-0464</td>
+      <td>https://wellness-and-mental-health.example.com</td>
+      <td>24/7</td>
+      <td>Professional</td>
+      <td>Not a substitute for professional medical advice. In emergencies, call local services immediately.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Nonprofits & Charities</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Nonprofits & Charities Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>565 Market Street, Metropolis, NY 10465</td>
+      <td>(555) 456-0465</td>
+      <td>https://nonprofits-and-charities.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Religious Organizations</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Religious Organizations Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>566 Market Street, Metropolis, NY 10466</td>
+      <td>(555) 467-0466</td>
+      <td>https://religious-organizations.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Government Services (Local)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, Plain-language answers</td>
+      <td>Government Services Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>567 Market Street, Metropolis, NY 10467</td>
+      <td>(555) 478-0467</td>
+      <td>https://government-services-local.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Concise</td>
+      <td>Informational guidance only; refer to official regulations and notices for authoritative details.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Government Services (State)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Government Services Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>568 Market Street, Metropolis, NY 10468</td>
+      <td>(555) 489-0468</td>
+      <td>https://government-services-state.example.com</td>
+      <td>24/7</td>
+      <td>Reassuring</td>
+      <td>Informational guidance only; refer to official regulations and notices for authoritative details.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Government Services (Federal)</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Government Services Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>569 Market Street, Metropolis, NY 10469</td>
+      <td>(555) 490-0469</td>
+      <td>https://government-services-federal.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Expert but approachable</td>
+      <td>Informational guidance only; refer to official regulations and notices for authoritative details.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Public Safety</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Public Safety Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>570 Market Street, Metropolis, NY 10470</td>
+      <td>(555) 401-0470</td>
+      <td>https://public-safety.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Professional</td>
+      <td>Informational guidance only; refer to official regulations and notices for authoritative details.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Emergency Management</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Emergency Management Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>571 Market Street, Metropolis, NY 10471</td>
+      <td>(555) 412-0471</td>
+      <td>https://emergency-management.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Libraries & Museums</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Libraries & Museums Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>572 Market Street, Metropolis, NY 10472</td>
+      <td>(555) 423-0472</td>
+      <td>https://libraries-and-museums.example.com</td>
+      <td>24/7</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Parks & Recreation</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Parks & Recreation Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>573 Market Street, Metropolis, NY 10473</td>
+      <td>(555) 434-0473</td>
+      <td>https://parks-and-recreation.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Environmental Services</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Environmental Services Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>574 Market Street, Metropolis, NY 10474</td>
+      <td>(555) 445-0474</td>
+      <td>https://environmental-services.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Reassuring</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Waste Management</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Waste Management Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>575 Market Street, Metropolis, NY 10475</td>
+      <td>(555) 456-0475</td>
+      <td>https://waste-management.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Human Resources Tech</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Human Resources Tech Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>576 Market Street, Metropolis, NY 10476</td>
+      <td>(555) 467-0476</td>
+      <td>https://human-resources-tech.example.com</td>
+      <td>24/7</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Recruiting & Staffing</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Recruiting & Staffing Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>577 Market Street, Metropolis, NY 10477</td>
+      <td>(555) 478-0477</td>
+      <td>https://recruiting-and-staffing.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Job Boards</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Job Boards Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>578 Market Street, Metropolis, NY 10478</td>
+      <td>(555) 489-0478</td>
+      <td>https://job-boards.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>SaaS (B2B)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, SSO/SCIM</td>
+      <td>SaaS Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>579 Market Street, Metropolis, NY 10479</td>
+      <td>(555) 490-0479</td>
+      <td>https://saas-b2b.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>Onboarding; Billing; Support; Guides</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>SaaS (B2C)</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>SaaS Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>580 Market Street, Metropolis, NY 10480</td>
+      <td>(555) 401-0480</td>
+      <td>https://saas-b2c.example.com</td>
+      <td>24/7</td>
+      <td>Reassuring</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Cloud Infrastructure</td>
+      <td>80k–300k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Cloud Infrastructure Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>581 Market Street, Metropolis, NY 10481</td>
+      <td>(555) 412-0481</td>
+      <td>https://cloud-infrastructure.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Cybersecurity</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Cybersecurity Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>582 Market Street, Metropolis, NY 10482</td>
+      <td>(555) 423-0482</td>
+      <td>https://cybersecurity.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>DevTools</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>DevTools Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>583 Market Street, Metropolis, NY 10483</td>
+      <td>(555) 434-0483</td>
+      <td>https://devtools.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>CRM Platforms</td>
+      <td>30k–120k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>CRM Platforms Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>584 Market Street, Metropolis, NY 10484</td>
+      <td>(555) 445-0484</td>
+      <td>https://crm-platforms.example.com</td>
+      <td>24/7</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Marketing Tech</td>
+      <td>30k–120k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Marketing Tech Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>585 Market Street, Metropolis, NY 10485</td>
+      <td>(555) 456-0485</td>
+      <td>https://marketing-tech.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Advertising Agencies</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Advertising Agencies Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>586 Market Street, Metropolis, NY 10486</td>
+      <td>(555) 467-0486</td>
+      <td>https://advertising-agencies.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Reassuring</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>PR & Communications</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>PR & Communications Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>587 Market Street, Metropolis, NY 10487</td>
+      <td>(555) 478-0487</td>
+      <td>https://pr-and-communications.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Expert but approachable</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Events & Ticketing</td>
+      <td>30k–120k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Events & Ticketing Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>588 Market Street, Metropolis, NY 10488</td>
+      <td>(555) 489-0488</td>
+      <td>https://events-and-ticketing.example.com</td>
+      <td>24/7</td>
+      <td>Professional</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Printing & Office Supplies</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Printing & Office Supplies Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>589 Market Street, Metropolis, NY 10489</td>
+      <td>(555) 490-0489</td>
+      <td>https://printing-and-office-supplies.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Friendly</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Automotive Dealerships</td>
+      <td>30k–120k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Automotive Dealerships Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>590 Market Street, Metropolis, NY 10490</td>
+      <td>(555) 401-0490</td>
+      <td>https://automotive-dealerships.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Auto Aftermarket & Service</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Auto Aftermarket & Service Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>591 Market Street, Metropolis, NY 10491</td>
+      <td>(555) 412-0491</td>
+      <td>https://auto-aftermarket-and-service.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Insurance (P&C)</td>
+      <td>30k–120k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Insurance Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>592 Market Street, Metropolis, NY 10492</td>
+      <td>(555) 423-0492</td>
+      <td>https://insurance-pandc.example.com</td>
+      <td>24/7</td>
+      <td>Reassuring</td>
+      <td>Coverage subject to policy terms and underwriting. Not all products available in all regions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Insurance (Life)</td>
+      <td>30k–120k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Insurance Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>593 Market Street, Metropolis, NY 10493</td>
+      <td>(555) 434-0493</td>
+      <td>https://insurance-life.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Expert but approachable</td>
+      <td>Coverage subject to policy terms and underwriting. Not all products available in all regions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Travel Insurance</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Travel Insurance Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>594 Market Street, Metropolis, NY 10494</td>
+      <td>(555) 445-0494</td>
+      <td>https://travel-insurance.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Professional</td>
+      <td>Coverage subject to policy terms and underwriting. Not all products available in all regions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Banking (Credit Unions)</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility, Strong auth (OAuth2/biometrics)</td>
+      <td>Banking Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>595 Market Street, Metropolis, NY 10495</td>
+      <td>(555) 456-0495</td>
+      <td>https://banking-credit-unions.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Friendly</td>
+      <td>Financial products involve risk. Performance not guaranteed. Terms apply; consult licensed professionals.</td>
+      <td>Checking; Savings; Cards; Loans; Mortgages</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Microfinance</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Microfinance Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>596 Market Street, Metropolis, NY 10496</td>
+      <td>(555) 467-0496</td>
+      <td>https://microfinance.example.com</td>
+      <td>24/7</td>
+      <td>Empathetic</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Fintech Payments</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Fintech Payments Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>597 Market Street, Metropolis, NY 10497</td>
+      <td>(555) 478-0497</td>
+      <td>https://fintech-payments.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Concise</td>
+      <td>Information provided is for general guidance; verify details and terms before making decisions.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Lending & BNPL</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Lending & BNPL Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>598 Market Street, Metropolis, NY 10498</td>
+      <td>(555) 489-0498</td>
+      <td>https://lending-and-bnpl.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Reassuring</td>
+      <td>Financial products involve risk. Performance not guaranteed. Terms apply; consult licensed professionals.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Wealth Management</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Wealth Management Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>599 Market Street, Metropolis, NY 10499</td>
+      <td>(555) 490-0499</td>
+      <td>https://wealth-management.example.com</td>
+      <td>Mon-Sun: 8:00 AM - 8:00 PM, Local</td>
+      <td>Expert but approachable</td>
+      <td>Financial products involve risk. Performance not guaranteed. Terms apply; consult licensed professionals.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Healthcare Payers</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Healthcare Payers Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>600 Market Street, Metropolis, NY 10500</td>
+      <td>(555) 401-0500</td>
+      <td>https://healthcare-payers.example.com</td>
+      <td>24/7</td>
+      <td>Professional</td>
+      <td>Not a substitute for professional medical advice. In emergencies, call local services immediately.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Telemedicine</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Telemedicine Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>601 Market Street, Metropolis, NY 10501</td>
+      <td>(555) 412-0501</td>
+      <td>https://telemedicine.example.com</td>
+      <td>Mon-Fri: 8:00 AM - 5:00 PM, Local; Sat: 9:00 AM - 1:00 PM</td>
+      <td>Friendly</td>
+      <td>Not a substitute for professional medical advice. In emergencies, call local services immediately.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+    <tr>
+      <td>Home Healthcare</td>
+      <td>5k–60k / month</td>
+      <td>24/7 availability, Secure handoff to humans, Multilingual support, Analytics & intent reporting, WCAG AA accessibility</td>
+      <td>Home Healthcare Solutions Group</td>
+      <td>Alex Lee</td>
+      <td>602 Market Street, Metropolis, NY 10502</td>
+      <td>(555) 423-0502</td>
+      <td>https://home-healthcare.example.com</td>
+      <td>Mon-Fri: 9:00 AM - 6:00 PM, Local</td>
+      <td>Empathetic</td>
+      <td>Not a substitute for professional medical advice. In emergencies, call local services immediately.</td>
+      <td>FAQs; Support; Billing; Account</td>
+      <td>Internal SOPs; Product docs; Regulatory site if applicable</td>
+      <td>Example profile for planning purposes; replace with real org metadata.</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
